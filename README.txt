@@ -10,6 +10,7 @@ This is going to creat a boot.o file which you'll have to use later. Now for the
  'cp start.bin isodir/boot/start.bin'
  And also copy the grub.cfg into the grub folder. You can also use this command:
  'cp grub.cfg isodir/boot/grub/grub.cfg'
+ Make sure you have xorriso installed before running the grub2 command
  Now create the iso with this command:
 'grub-mkrescue -o Boot.iso isodir'
 If this isn't working try:
