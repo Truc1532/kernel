@@ -15,6 +15,6 @@ loader:
 	call kernel_main
 	cli 
 
-keep_doing_shit_stupid_ahh_bitch:
+hang:
 	hlt
-	jmp keep_doing_shit_stupid_ahh_bitch
+	jmp hang
