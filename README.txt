@@ -5,15 +5,7 @@ xorriso
 GRUB - (make sure you have the grub-mkrescue or grub2-mkrescue command avaible)
 Virtualbox or qemu
 
----CREATING_THE_ISO---
-I decided the create a shell script that builds and links the files for you because it would be too much commands to put in to compile and link manually.
-To creating the iso is a pretty straight forward process. First create the build directories:
-mkdir -p isodir/boot/grub/
-Then move the kernel.efi and grub.cfg in those directories.
-mv kernel.efi isodir/boot/
-mv grub.cfg isodir/boot/grub/
-Finally to create the iso itself run this command:
-grub-mkrescue -o kernel.iso isodir/
+---EMULATING---
 If you decide to use qemu to run the kernel, enter this command:
 qemu-system-i386 -cdrom kernel.iso
 ---ABOUT---
